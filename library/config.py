@@ -38,7 +38,8 @@ def load_yaml(configfile):
 PATH = sys.path[0]
 MAIN_DIRECTORY = Path(__file__).parent.parent.resolve()
 FONTS_DIR = str(MAIN_DIRECTORY / "res" / "fonts") + "/"
-CONFIG_DATA = load_yaml(MAIN_DIRECTORY / "config.yaml")
+CONFIG_FILE = Path(os.environ.get("TURING_CONFIG", MAIN_DIRECTORY / "config.yaml"))
+CONFIG_DATA = load_yaml(CONFIG_FILE)
 THEME_DEFAULT = load_yaml(MAIN_DIRECTORY / "res/themes/default.yaml")
 THEME_DATA = None
 

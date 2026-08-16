@@ -1,0 +1,6 @@
+# Turing 2.1-inch serial states (sleeping and awake)
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="ca21", GROUP="dialout", MODE="0660", TAG+="uaccess"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1d6b", ATTRS{idProduct}=="0121", GROUP="dialout", MODE="0660", TAG+="uaccess"
+
+# TURZX/Turing 9.2-inch direct USB protocol
+SUBSYSTEM=="usb", ATTR{idVendor}=="1cbe", ATTR{idProduct}=="0092", GROUP="plugdev", MODE="0660", TAG+="uaccess"

@@ -1,0 +1,13 @@
+[Unit]
+Description=Brick emblem animation on the Turing 2.1-inch display
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/gotham-turzx-monitor
+ExecStart=%h/gotham-turzx-monitor/.venv/bin/python %h/gotham-turzx-monitor/bat-emblem-spinner.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

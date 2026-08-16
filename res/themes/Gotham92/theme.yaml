@@ -1,0 +1,138 @@
+---
+author: "custom for bumblebee"
+
+display:
+  DISPLAY_SIZE: 9.2"
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 235, 176, 35
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 1920
+
+static_text:
+  CPU_LABEL:
+    TEXT: CPU
+    X: 48
+    Y: 285
+    FONT: roboto-mono/RobotoMono-Bold.ttf
+    FONT_SIZE: 46
+    FONT_COLOR: 235, 176, 35
+    BACKGROUND_IMAGE: background.png
+  GPU_LABEL:
+    TEXT: GPU
+    X: 48
+    Y: 710
+    FONT: roboto-mono/RobotoMono-Bold.ttf
+    FONT_SIZE: 46
+    FONT_COLOR: 235, 176, 35
+    BACKGROUND_IMAGE: background.png
+  RAM_LABEL:
+    TEXT: RAM
+    X: 48
+    Y: 1135
+    FONT: roboto-mono/RobotoMono-Bold.ttf
+    FONT_SIZE: 46
+    FONT_COLOR: 235, 176, 35
+    BACKGROUND_IMAGE: background.png
+  DISK_LABEL:
+    TEXT: DISK
+    X: 48
+    Y: 1560
+    FONT: roboto-mono/RobotoMono-Bold.ttf
+    FONT_SIZE: 46
+    FONT_COLOR: 235, 176, 35
+    BACKGROUND_IMAGE: background.png
+
+STATS:
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 1
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 48
+        Y: 340
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 104
+        FONT_COLOR: 225, 238, 242
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      INTERVAL: 1
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 310
+        Y: 385
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 48
+        FONT_COLOR: 118, 199, 218
+        BACKGROUND_IMAGE: background.png
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 48
+        Y: 765
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 104
+        FONT_COLOR: 225, 238, 242
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 310
+        Y: 810
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 48
+        FONT_COLOR: 118, 199, 218
+        BACKGROUND_IMAGE: background.png
+  MEMORY:
+    INTERVAL: 2
+    VIRTUAL:
+      PERCENT_TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 48
+        Y: 1190
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 104
+        FONT_COLOR: 225, 238, 242
+        BACKGROUND_IMAGE: background.png
+      USED:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 250
+        Y: 1235
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 36
+        FONT_COLOR: 118, 199, 218
+        BACKGROUND_IMAGE: background.png
+  DISK:
+    INTERVAL: 10
+    USED:
+      PERCENT_TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 48
+        Y: 1615
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 104
+        FONT_COLOR: 225, 238, 242
+        BACKGROUND_IMAGE: background.png
+      TEXT:
+        SHOW: true
+        SHOW_UNIT: true
+        X: 270
+        Y: 1660
+        FONT: roboto-mono/RobotoMono-Regular.ttf
+        FONT_SIZE: 36
+        FONT_COLOR: 118, 199, 218
+        BACKGROUND_IMAGE: background.png

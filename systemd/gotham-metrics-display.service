@@ -1,0 +1,14 @@
+[Unit]
+Description=Gotham metrics on the TURZX 9.2-inch display
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/gotham-turzx-monitor
+Environment=TURING_CONFIG=config-gotham.yaml
+ExecStart=%h/gotham-turzx-monitor/.venv/bin/python %h/gotham-turzx-monitor/main.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
